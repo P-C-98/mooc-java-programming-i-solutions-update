@@ -1,0 +1,12 @@
+# Ignore NetBeans project files
+nbproject/
+build/
+dist/
+out/
+
+# Ignore OS files
+.DS_Store
+
+# Ignore compiled class files
+*.class
+*.jar

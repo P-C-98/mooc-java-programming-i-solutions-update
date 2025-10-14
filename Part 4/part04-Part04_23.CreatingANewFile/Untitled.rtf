@@ -1,0 +1,48 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Monaco;
+}
+{\colortbl;\red255\green255\blue255;\red251\green2\blue7;\red0\green0\blue0;\red251\green2\blue255;
+\red255\green255\blue255;\red93\green108\blue125;\red12\green99\blue153;\red135\green135\blue135;\red210\green50\blue85;
+\red135\green91\blue44;\red255\green255\blue255;\red85\green138\blue3;\red128\green0\blue128;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c14913\c0;\cssrgb\c0\c0\c0;\cssrgb\c100000\c25279\c100000;
+\cssrgb\c100000\c100000\c100000;\cssrgb\c43922\c50196\c56471;\cssrgb\c0\c46667\c66667;\cssrgb\c60000\c60000\c60000;\cssrgb\c86667\c29020\c40784;
+\cssrgb\c60392\c43137\c22745;\cssrgb\c100000\c100000\c100000\c50196;\cssrgb\c40000\c60000\c0;\cssrgb\c57919\c12801\c57269;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 Notes of reading files in Java\
+
+\f1\b0 \
+Used the scanner class to read user input.\
+\
+If we want to read a file as a parameter in our code you can use;\
+\
+\cf2 Paths.get(\'93filename.extension\'94)    I.e. (file.txt)\
+\
+\cf3 The scanner class then reads this data and using a while-loop, the reading continues until all the lines of the file have been read\
+\
+We add a try and catch block to find any potential errors at the beginning and end. \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs20 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 // first\strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\cf7 \strokec7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 import\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  java\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 util\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .\cf9 \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 Scanner\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ;\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\cf7 \strokec7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 import\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  java\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 nio\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 file\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .\cf9 \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 Paths\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ;\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\
+\cf6 \strokec6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 // in the program:\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\
+\cf4 \strokec6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 // we create a scanner for reading the file\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\cf7 \strokec7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 try\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf9 \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 Scanner\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  scanner \cf10 \cb11 \strokec10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cf0 \cb5 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf7 \strokec7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 new\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf9 \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 Scanner\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf9 \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 Paths\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .\cf9 \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 get\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf12 \strokec12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "file.txt"\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 )))\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \{ \cf13 Try is where you add your file\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\
+\cf4     \strokec6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 // we read the file until all lines have been read\strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\cf0     \cf7 \strokec7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 while\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 scanner\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .\cf9 \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 hasNextLine\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ())\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \{\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+        \cf6 \strokec6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 // we read one line\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\cf4         \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 String\strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  row \cb11 \strokec10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 =\cb5 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  scanner\strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .\strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 nextLine\strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ();\strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+        \strokec6 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 // we print the line that we read\strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\cf0         \cf9 \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 System\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 out\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .\cf9 \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 println\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 row\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 );\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+    \cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \}\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \}\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf7 \strokec7 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 catch\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf9 \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 Exception\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  e\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 )\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \{\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+    \cf9 \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 System\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 out\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .\cf9 \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 println\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 (\cf12 \strokec12 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 "Error: "\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  \cf10 \cb11 \strokec10 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 +\cf0 \cb5 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0  e\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 .\cf9 \strokec9 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 getMessage\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 ());\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+\cf8 \strokec8 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \}\cf0 \strokec3 \shad\shadx0\shady-20\shadr0\shado255 \shadc0 \
+}
