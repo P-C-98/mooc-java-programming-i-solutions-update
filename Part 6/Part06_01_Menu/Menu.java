@@ -22,7 +22,7 @@ public class Menu {
     public void printMeals() {
         for (String meal : meals) {
             System.out.println(meal);
-        }
+        }.
     } 
     //clears the list
     public void clearMenu() {
